@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+{% extends 'base.html' %}
+{% block content %}
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf6;
+      color: #333;
+    }
+    header {
+      background-color: #b85c38;
+      padding: 1%;
+      text-align: center;
+      color: rgba(46, 7, 7, 0.927);
+    }
+    nav a {
+      color: rgba(200, 38, 38, 0.925);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      color: #b85c38;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(16, 7, 7, 0.719);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.09);
+    }
+    footer {
+      background-color: #b85c38;
+      color: rgba(34, 5, 5, 0.776);
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body class="container my-5">
+    <h1>Sentle Afro Hair Studio - Adults Price List</h1>
+<nav>
+        <ul>
+            <li class="active">
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="home.html">home</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="kids_prices.html">kids_prices</a></li>
+            <li><a href="book.html">book</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="admin_dashboard.html">admin_dashboard</a></li>
+            <li><a href="admin_login.html">admin_login</a></li>
+        </ul>
+    </nav>
+    <div class="text-center mb-4">
+        <div class="header-title">Sentle Afro Hair Studio</div>
+        <div class="brand">Cut your glow up ✨</div>
+        <p class="section-title">Adults Price List</p>
+    </div>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-dark text-light">Cornrows from <span class="price">R350.00</span></li>
+        <li class="list-group-item bg-dark text-light">Cornrows with hairpiece from <span class="price">R480.00</span></li>
+        <li class="list-group-item bg-dark text-light">2pondo cornrows from <span class="price">R400.00</span></li>
+        <li class="list-group-item bg-dark text-light">Own hair twist from <span class="price">R200.00</span></li>
+        <li class="list-group-item bg-dark text-light">Pompom with own hair from <span class="price">R250.00</span></li>
+        <li class="list-group-item bg-dark text-light">Bantu knots ownhair from <span class="price">R250.00</span></li>
+        <li class="list-group-item bg-dark text-light">Bantu knots with hairpiece <span class="price">R500.00</span></li>
+        <li class="list-group-item bg-dark text-light">Ben & Betty from <span class="price">R300.00</span></li>
+        <li class="list-group-item bg-dark text-light">Gel styling from <span class="price">R460.00</span></li>
+        <li class="list-group-item bg-dark text-light">Gel styling with hairpiece from <span class="price">R560.00</span></li>
+        <li class="list-group-item bg-dark text-light">Bridal styles from <span class="price">R1800.00</span></li>
+        <li class="list-group-item bg-dark text-light">Box braids from <span class="price">R700.00</span></li>
+        <li class="list-group-item bg-dark text-light">Knotless braids from <span class="price">R900.00</span></li>
+        <li class="list-group-item bg-dark text-light">Tribal braids from <span class="price">R800.00</span></li>
+        <li class="list-group-item bg-dark text-light">Afro twist braids from <span class="price">R800.00</span></li>
+        <li class="list-group-item bg-dark text-light">Braids with beads extra <span class="price">R150.00</span></li>
+        <li class="list-group-item bg-dark text-light">Straight up from <span class="price">R500.00</span></li>
+        <li class="list-group-item bg-dark text-light">Straight back from <span class="price">R450.00</span></li>
+    </ul>
+
+         <p class="text-center mt-4">
+    <a href="{{ url_for('book') }}" class="btn btn-primary btn-lg">Book Your Appointment Now</a>
+  </p>
+  
+       </div>
+{% endblock %}
+</body>
+</html>

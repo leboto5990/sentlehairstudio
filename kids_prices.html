@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block content %}
+<nav>
+<div class="container my-5">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf6;
+      color: #333;
+    }
+    header {
+      background-color: #b85c38;
+      padding: 1%;
+      text-align: center;
+      color: rgba(46, 7, 7, 0.927);
+    }
+    nav a {
+      color: rgba(200, 38, 38, 0.925);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      color: #b85c38;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(16, 7, 7, 0.719);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.09);
+    }
+    footer {
+      background-color: #b85c38;
+      color: rgba(34, 5, 5, 0.776);
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+  <h2 class="text-center text-uppercase" style="color: rgba(26, 27, 24, 0.934); font-weight: bold;">Kids Price List</h2>
+
+    <nav>
+        <ul>
+            <li class="active">
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="Adults_prices.html">Adults_prices</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="home.html">home</a></li>
+            <li><a href="book.html">book</a></li>
+            <li><a href="about.html">about </a></li>
+            <li><a href="admin_dashboard.html">admin_dashboard</a></li>
+            <li><a href="admin_login.html">admin_login</a></li>
+        </ul>
+    </nav>
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered mt-4">
+      <thead class="table-dark">
+        <tr>
+          <th>Service</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Cornrows from</td><td>R300.00</td></tr>
+        <tr><td>Cornrows with hairpiece from</td><td>R380.00</td></tr>
+        <tr><td>2pondo cornrows from</td><td>R380.00</td></tr>
+        <tr><td>Own hair twist from</td><td>R120.00</td></tr>
+        <tr><td>Pompom with own hair from</td><td>R200.00</td></tr>
+        <tr><td>Bantu knots own hair from</td><td>R180.00</td></tr>
+        <tr><td>Bantu knots with hairpiece</td><td>R380.00</td></tr>
+        <tr><td>Ben & Betty from</td><td>R300.00</td></tr>
+        <tr><td>Gel styling from</td><td>R300.00</td></tr>
+        <tr><td>Gel styling with hairpiece from</td><td>R400.00</td></tr>
+        <tr><td>Box braids from</td><td>R600.00</td></tr>
+        <tr><td>Knotless braids from</td><td>R800.00</td></tr>
+        <tr><td>Tribal braids from</td><td>R700.00</td></tr>
+        <tr><td>Braids with beads extra</td><td>R150.00</td></tr>
+        <tr><td>Straight up from</td><td>R420.00</td></tr>
+        <tr><td>Straight back from</td><td>R380.00</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="text-center mt-4">
+    <a href="{{ url_for('book') }}" class="btn btn-primary btn-lg">Book Your Appointment Now</a>
+  </p>
+</div>
+{% endblock %}
+</nav>
